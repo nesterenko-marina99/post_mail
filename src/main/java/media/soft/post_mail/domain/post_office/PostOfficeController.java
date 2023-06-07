@@ -13,7 +13,7 @@ public class PostOfficeController {
 
     private final PostOfficeService postOfficeService;
 
-    @GetMapping(value = "/create")
+    @PostMapping(value = "/create")
     @ResponseBody
     @ResponseStatus(HttpStatus.CREATED)
     public PostOffice getMailingStatus(@Valid @RequestBody PostOffice office) {
